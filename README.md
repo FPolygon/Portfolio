@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Professional Portfolio Website
+
+This is a professional portfolio website built using Next.js 14 with the app router and components from shadcn's AceternityUI. The website showcases my skills, projects, and experiences in an elegant and modern design.
+
+## Features
+
+- Built with Next.js 14 and the app router for optimal performance and developer experience
+- Utilizes shadcn's AceternityUI components for a sleek and consistent design
+- Responsive layout that adapts to different screen sizes and devices
+- Easy to customize and extend with modular components and styles
+- Optimized for search engines with proper meta tags and structured data
+- Lightweight and fast loading for an excellent user experience
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/FPolygon/Portfolio.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd portfolio-website
+```
+
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open your browser and visit `http://localhost:3000` to see the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To customize the website with your own content and styles, follow these steps:
 
-## Learn More
+1. Update the content in the relevant components located in the `app` directory.
+2. Modify the styles in the `styles` directory to match your desired design.
+3. Replace the images in the `public` directory with your own images.
+4. Update the meta tags and structured data in the `app/head.tsx` file.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To deploy the website to a production environment, you can use platforms like Vercel, Netlify, or AWS. Make sure to set the necessary environment variables and configure the deployment settings according to your platform of choice.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Credits
 
-## Deploy on Vercel
+- [Next.js](https://nextjs.org/) - The React framework for production
+- [shadcn/ui](https://github.com/shadcn/ui) - A collection of accessible and customizable components
+- [AceternityUI](https://ui.aceternity.com/) - A modern UI component library
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have any questions, suggestions, or feedback, please feel free to reach out to me:
+
+- Email: business@fpagu.com
+- LinkedIn: [Francis Pagulayan](https://www.linkedin.com/in/francis-pagulayan-924796222)
+
+Thank you for visiting my portfolio website!
