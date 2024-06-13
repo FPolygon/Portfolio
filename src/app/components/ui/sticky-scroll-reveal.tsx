@@ -57,49 +57,48 @@ export const StickyScroll = ({
 
   return (
     <motion.div
-      className="flex justify-center relative space-x-10 rounded-md p-10 bg-[#121212]"
-      ref={ref}
-    >
-      <div className="div relative flex items-start px-4">
-        <div className="max-w-2xl">
-          {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
-              <motion.h2
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
-                }}
-                className="text-3xl font-bold text-slate-100"
-              >
-                {item.title}
-              </motion.h2>
-              <motion.p
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
-                }}
-                className="text-lg text-slate-300 max-w-sm mt-10"
-              >
-                {item.description}
-              </motion.p>
+        className="flex justify-center relative space-x-10 rounded-md p-10"
+        ref={ref}
+        >
+        <div className="div relative flex items-start px-4">
+            <div className="max-w-2xl">
+            {content.map((item, index) => (
+                <div key={item.title + index} className="my-20">
+                <motion.h2
+                    initial={{
+                    opacity: 0,
+                    }}
+                    animate={{
+                    opacity: activeCard === index ? 1 : 0.3,
+                    }}
+                    className="text-3xl font-bold text-slate-100"
+                >
+                    {item.title}
+                </motion.h2>
+                <motion.p
+                    initial={{
+                    opacity: 0,
+                    }}
+                    animate={{
+                    opacity: activeCard === index ? 1 : 0.3,
+                    }}
+                    className="text-lg text-slate-300 max-w-sm mt-10"
+                >
+                    {item.description}
+                </motion.p>
+                </div>
+            ))}
+            <div className="h-40" />
             </div>
-          ))}
-          <div className="h-40" />
         </div>
-      </div>
-      <div
-        style={{ background: backgroundGradient }}
-        className={cn(
-            "hidden lg:block h-96 w-96 rounded-md bg-white sticky top-10 overflow-hidden",
+        <div
+            className={cn(
+            "hidden lg:block h-96 w-96 rounded-md sticky top-10 overflow-hidden",
             contentClassName
-        )}
-      >
-        {content[activeCard].content ?? null}
-      </div>
+            )}
+        >
+            {content[activeCard].content ?? null}
+        </div>
     </motion.div>
   );
 };

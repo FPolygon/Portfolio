@@ -1,6 +1,5 @@
 "use client";
 import React from 'react'
-import dynamic from 'next/dynamic'
 import AnimatedNumbers from "react-animated-numbers"
 import { BackgroundGradient } from "./ui/background-gradient";
 
@@ -28,7 +27,7 @@ const achievementsList = [
 
 const AchievementsSection = () => {
     return (
-      <div className='py-4 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+      <div className='py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
         <BackgroundGradient className="bg-[#121212] rounded-[22px] py-8 px-4 sm:px-17 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {achievementsList.map((achievement, index) => (
             <div
@@ -43,12 +42,12 @@ const AchievementsSection = () => {
                   className='text-white text-4xl font-bold'
                   transitions={(index) => ({
                     type: "spring",
-                    duration: index + 3,
+                    duration: index + 1,
                   })}
                 />
                 {achievement.postfix}
               </h2>
-              <p className='text-[#ADB7BE] text-base'>
+              <p className='text-[#ADB7BE] text-base'>  
                 {achievement.metric}
               </p>
             </div>
