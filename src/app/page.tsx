@@ -6,6 +6,7 @@ import AchievementsSection from "./components/AchievementsSection";
 import { FloatingNav } from "./components/ui/floating-navbar";
 import { BackgroundBeams } from "./components/ui/background-beams";
 import { ProjectsSection } from "./components/ProjectsSection";
+import { TimelineDemo } from "./components/TImelineDemo";
 
 export const metadata = {
   title: "Francis Pagulayan",

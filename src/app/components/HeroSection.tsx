@@ -4,13 +4,14 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-10">
+    <section className="lg:py-10 pb-12 sm:pb-12 lg:pb-12 pt-16 sm:pt-24 lg:pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-12">
           <div className="col-span-12 place-self-center text-center sm:text-left">
-            <h1 className="text-gray-200 mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold text-center">
+            <h1 className="text-gray-200 mb-4 text-3xl sm:text-4xl lg:text-7xl lg:leading-normal font-normal text-center">
               <span className="bg-clip-text">
                 Hi, I'm <br />
                 <span
+                  className="font-semibold text-8xl"
                   style={{
                     background: "linear-gradient(to right, #103CE7, #64E9FF)",
                     WebkitBackgroundClip: "text",
@@ -23,23 +24,19 @@ const HeroSection = () => {
               <br />
               <TypeAnimation
                 sequence={[
-                  'Full Stack Developer',
+                  'AI Engineer',
                   2000,
-                  'AI/ML Engineer',
+                  'GPU Babysitter',
                   2000,
-                  'Cybersecurity Analyst',
+                  'Capturer of Flags ',
                   2000,
-                  'DevOps Engineer',
+                  'Lifelong Student',
                   2000,
-                  'Data Scientist',
-                  2000,
-                  'Lifelong Learner',
-                  2000
                 ]}
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
-                className="text-3xl sm:text-4xl lg:text-5xl text-gray-200"
+                className="text-xl sm:text-2xl lg:text-3xl text-gray-200 font-sans"
               />
             </h1>
           </div>
