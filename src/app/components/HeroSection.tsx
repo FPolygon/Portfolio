@@ -9,7 +9,7 @@ const HeroSection = () => {
           <div className="col-span-12 place-self-center text-center sm:text-left">
             <h1 className="text-gray-200 mb-4 text-3xl sm:text-4xl lg:text-7xl lg:leading-normal font-normal text-center">
               <span className="bg-clip-text">
-                Hi, I'm <br />
+                Hi, I&apos;m <br />
                 <span
                   className="font-semibold text-8xl"
                   style={{
